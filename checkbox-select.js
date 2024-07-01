@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
-            btnSelectText.textContent = selectedItemsCounter > 0 ? `${selectedItemsCounter} Fields Selected` : "Escolher:";
+            btnSelectText.textContent = selectedItemsCounter > 0 ? `${selectedItemsCounter} Fields Selected` : "Chose:";
         
             selectedItemsContainer.style.display = selectedItemsCounter > 0 ? 'block' : 'none';
         }
