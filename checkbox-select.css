@@ -87,68 +87,34 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-
-
-/* Caixa de persquiza e Opções*/
-
-/* .my-select-opc { */
-.cbs-main-container {
-    /* display: none; */
-    
-
-    /* border: 1px solid #545454;; */
-    
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column; */
-    gap: 5px;
-    
-    
-}
-
-
-
-
-/* .field-name { */
 .field-name {
     font-size: 14px;
 }
 
-
-/* POSITION */
-
-/* .my-select-opc-main { */
 .cbs-main {
     background-color: aquamarine;
     position: relative;   
 }
 
-/* .my-select-opc { */
 .cbs-main-container {
     position: absolute;
     max-height: fit-content;
     border: 1px solid #ced4da;
     margin: 5px;
     padding: 10px;
-    /* top: 53px; */
     top: 0;
     opacity: 0;
-
     display: flex;
     flex-direction: column;
     gap: 5px;
-
     visibility: hidden;
     border-radius: 5px;
-    /* display: none; */
     background-color: #DCDCDC;
     color: #545454;
     width: calc(100% - (5 * 2px));
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Transição suave para opacity e visibility */
 }
 
-
-/* .my-select-opc.active { */
 .cbs-main-container.active {
     opacity: 1;
     visibility: visible;
@@ -158,32 +124,20 @@ input[type="radio"] {
     z-index: 100;
 }
 
-
-
-/* .my-opc-items { */
 .cbs-items {
     min-height: fit-content;
     overflow: auto;
     max-height: 132px;
 }
 
-
-/* .my-opc-items::-webkit-scrollbar { */
 .cbs-items::-webkit-scrollbar {
     width: 4px;
-    /* Largura da barra de rolagem */
 }
 
-
-/* .my-opc-items::-webkit-scrollbar-thumb { */
 .cbs-items::-webkit-scrollbar-thumb {
     background-color: #5454547e;
-    /* Cor da barra de rolagem */
     border-radius: 4px;
-    /* Borda arredondada da barra de rolagem */
 }
-
-
 
 .btn-arrow {
     transition: transform 0.5s ease;

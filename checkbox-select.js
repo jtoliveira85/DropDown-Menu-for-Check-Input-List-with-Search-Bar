@@ -9,11 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const btnSelectText = myOpcContainer.querySelector('.cbs-btn-text')
 
         const selectedItemsContainer = myOpcContainer.querySelector('.cbs-selected');
-        
-
         let rotation = -180;
-
-        
 
         // Toggle dropdown on button click
         btnSelect.addEventListener('click', () => {
@@ -30,24 +26,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function openCloseMenu(container, button, dropdown, filterInput) {
 
-            
-        
             dropdown.classList.toggle('active');
             scrollToTop(container, '.cbs-items');
 
             rotateArrow(button);
             
-
             // Clear filter input and show all options when opening
             if (dropdown.classList.contains('active')) {
                 filterInput.value = "";
                 showAllOptions(container);
-                
-                
-
-                // button.innerHTML = `${btnSelectText} <span class="btn-arrow triangle-up">&#9650;</span>`;
-            } else {
-                // button.innerHTML = `${btnSelectText} <span class="btn-arrow triangle-down">&#9660;</span>`;
             }
         }
 
@@ -137,6 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Scroll to top function with delay
+        // Time out Working with Style class  ".cbs-main-container" in checkbox-select.css
         function scrollToTop(container, selector) {
             const element = container.querySelector(selector);
             if (element) {
