@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    width: 500px;
+    margin: 200px auto;
+}
+
+.cbs-select {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-frm-ctrl {
+    display: block;
+    padding: .375rem .75rem;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 3px solid transparent; 
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.my-filter-input {
+    width: 100%;
+}
+
+.cbs-search {
+    width: 100%;
+}
+
+.cbs-label {
+    display: flex;
+    padding: 5px 5px;
+    margin: 3px;
+    gap: 5px;
+}
+
+.cbs-label:hover {
+    cursor: pointer;
+    background-color: #E8E8E8;
+    color: #545454;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus {
+    border-color: rgb(68, 122, 204);
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+input[type="radio"] {
+    transform: scale(1.05);
+}
+
+input[type="radio"] {
+    accent-color: rgb(68, 122, 204);
+}
+
+.cbs-selected {
+    margin: 6px 0;
+}
+
+.cbs-btn,
+.cbs-selected-btn {
+    border: none;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.cbs-selected-btn {
+    margin: 2px;
+}
+
+.cbs-btn:hover,
+.cbs-selected-btn:hover {
+    cursor: pointer;
+}
+
+
+
+/* Caixa de persquiza e Opções*/
+
+/* .my-select-opc { */
+.cbs-main-container {
+    /* display: none; */
+    
+
+    /* border: 1px solid #545454;; */
+    
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    gap: 5px;
+    
+    
+}
+
+
+
+
+/* .field-name { */
+.field-name {
+    font-size: 14px;
+}
+
+
+/* POSITION */
+
+/* .my-select-opc-main { */
+.cbs-main {
+    background-color: aquamarine;
+    position: relative;   
+}
+
+/* .my-select-opc { */
+.cbs-main-container {
+    position: absolute;
+    max-height: fit-content;
+    border: 1px solid #ced4da;
+    margin: 5px;
+    padding: 10px;
+    /* top: 53px; */
+    top: 0;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    visibility: hidden;
+    border-radius: 5px;
+    /* display: none; */
+    background-color: #DCDCDC;
+    color: #545454;
+    width: calc(100% - (5 * 2px));
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Transição suave para opacity e visibility */
+}
+
+
+/* .my-select-opc.active { */
+.cbs-main-container.active {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 100;
+}
+
+
+
+/* .my-opc-items { */
+.cbs-items {
+    min-height: fit-content;
+    overflow: auto;
+    max-height: 132px;
+}
+
+
+/* .my-opc-items::-webkit-scrollbar { */
+.cbs-items::-webkit-scrollbar {
+    width: 4px;
+    /* Largura da barra de rolagem */
+}
+
+
+/* .my-opc-items::-webkit-scrollbar-thumb { */
+.cbs-items::-webkit-scrollbar-thumb {
+    background-color: #5454547e;
+    /* Cor da barra de rolagem */
+    border-radius: 4px;
+    /* Borda arredondada da barra de rolagem */
+}
+
+
+
+.btn-arrow {
+    transition: transform 0.5s ease;
+    display: inline-block;
+    z-index: 0 !important;
+}
